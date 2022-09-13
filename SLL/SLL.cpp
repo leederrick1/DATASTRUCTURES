@@ -1,22 +1,8 @@
-#ifndef SLL_h
-#define SLL_h
-#pragma once
-//links for supplemental reading
-//https://www.geeksforgeeks.org/include-guards-in-c/
-
-
-#include <iostream>
-#include "SLL.cpp"
-#include "Node.cpp"
-template<typename T>
-class SLL {
- private:
- int size;
- int capacity;
- Node<T> * head;
-    
- public:
-    SLL();
+#include "SLL.hpp"
+    template<typename T>
+    SLL<T>::SLL() {
+        
+    }
     void push_front(T);
     void pop_front();
     void remove(); 
@@ -28,5 +14,3 @@ class SLL {
     T back();
     size_t size();
     void print();
-};
-#endif
